@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.container-bar {
+    display: flex;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2ea394;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    display: inline-block;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;/* Centrar elementos verticalmente */
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 8px 20px;
+    background-color: #365335;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button i {
+    font-size: .8rem;
+}
+
+/* Estilos para la galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    
+}
+
+.photo-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover; 
+}
+
+.photo-card .info {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.load-more{
+    display: none;
+}
